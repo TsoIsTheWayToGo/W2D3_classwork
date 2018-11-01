@@ -1,6 +1,5 @@
 require_relative 'card'
 
-
 class Deck
   attr_reader :stack
   SUITS = {
@@ -40,4 +39,7 @@ class Deck
     @stack = deck
   end
   
+  def print
+    self.each {|el| puts el}
+  end    
 end

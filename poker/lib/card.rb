@@ -27,4 +27,8 @@ class Card
     @suit = suit
     # @card = symb/ol
   end  
+  
+  def inspect
+    "#{name}" + ":" + "#{suit}"
+  end
 end
